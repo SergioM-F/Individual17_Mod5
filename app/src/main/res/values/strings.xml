@@ -6,4 +6,7 @@
     <string name="convert">CONVERT</string>
     <string name="reset">RESET</string>
     <string name="resultado">RESULTADO</string>
+    <string name="monto">Monto</string>
+    <string name="convertir_a">Convertir A:</string>
+    <string name="todos">TODO</string>
 </resources>

@@ -6,47 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageViewApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextIngreso"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/monto"
         android:inputType="number"
-        android:text="@string/name"
+        android:textColorHint="#A1887F"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewApp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="LabelFor" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerInic"
         android:layout_width="122dp"
         android:layout_height="48dp"
         android:layout_marginStart="80dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
-        app:layout_constraintStart_toEndOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextIngreso"
+        app:layout_constraintStart_toEndOf="@+id/editTextIngreso"
+        app:layout_constraintTop_toTopOf="@+id/editTextIngreso"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinnerReem"
         android:layout_width="122dp"
         android:layout_height="48dp"
         android:layout_marginStart="96dp"
@@ -60,9 +46,11 @@
         android:layout_width="83dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:text="@string/textview"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        android:gravity="center_vertical"
+        android:text="@string/convertir_a"
+        app:layout_constraintStart_toStartOf="@+id/editTextIngreso"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngreso"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/buttonConvert"
@@ -95,4 +83,14 @@
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="@+id/buttonConvert"
         app:layout_constraintTop_toBottomOf="@+id/buttonConvert" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="56dp"
+        android:contentDescription="@string/todos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_monetization_on_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
