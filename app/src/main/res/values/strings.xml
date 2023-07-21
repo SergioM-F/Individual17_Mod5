@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Individual17_Mod5</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="textview">TextView</string>
+    <string name="convert">CONVERT</string>
+    <string name="reset">RESET</string>
+    <string name="resultado">RESULTADO</string>
+</resources>
